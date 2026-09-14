@@ -19,40 +19,17 @@ Project consists of creating and configuring an administrative account in Active
 <h2>ActiveDirectory walk-through:</h2>
 
 <p align="center">
-In server dashboard click manage then Add Roles and Features: <br/>
-<img src="https://i.imgur.com/NVMnhRc.png"/>
+In Users and Computers of AD create a new PDU named Administratives: <br/>
+<img src="https://i.imgur.com/uYLepef.png"/>
 <br />
 <br />
-Click next->Role-based installation->next->select your server :  <br/>
-<img src="https://i.imgur.com/7dj58rQ.png"/>
+Create a new user in said PDU, then right-click and select "add to a group":  <br/>
+<img src="https://i.imgur.com/nbaKIST.png"/>
 <br />
 <br />
-Next->Select Active Directory Domain Services: <br/>
-<img src="https://i.imgur.com/C6nyeEz.png"/>
+in the empty space type in "Domain Admins" and click ok: <br/>
+<img src="https://i.imgur.com/JuN3kYW.png"/>
 <br />
 <br />
-Click next until you reach confirmation screen and choose to install:  <br/>
-<img src="https://i.imgur.com/9g0GEz7.png"/>
-<br />
-<br />
-After installing click on flag and select the option to promote server to a Domain Controller:  <br/>
-<img src="https://i.imgur.com/zB7gzLC.png"/>
-<br />
-<br />
-Add a new forest and name your domain:  <br/>
-<img src="https://i.imgur.com/LG7g2aR.png"/>
-<br />
-<br />
-Follow steps untill you arrive at installation screen and select install:  <br/>
-<img src="https://i.imgur.com/yaB9MF5.png"/>
-</p>
-
-<!--
- ```diff
-- text in red
-+ text in green
-! text in orange
-# text in gray
-@@ text in purple (and bold)@@
-```
---!>
+to check if User was successfuly added select properties->member of:  <br/>
+<img src="https://i.imgur.com/gxe0cQA.png"/>
