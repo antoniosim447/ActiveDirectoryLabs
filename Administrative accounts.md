@@ -1,9 +1,9 @@
 # ActiveDirectoryLabs
-<h1>Installing Active Directory on Windows Server</h1>
+<h1>Creating and configuring Admistrative accounts</h1>
 
 
 <h2>Description</h2>
-Project consists of installing and configuring Active Directory Domain Services (AD DS) on a Windows Server environment. I configured the server to function as a domain controller and set up the domain for managing users, computers, and network resources. I then promote the Windows Server to a Domain Controller, allowing it to authenticate users and manage resources within the Active Directory domain.
+Project consists of creating and configuring an administrative account in Active Directory with the appropriate permissions for managing users, computers, and domain resources.
 <br />
 
 
