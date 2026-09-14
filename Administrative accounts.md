@@ -19,7 +19,7 @@ Project consists of creating and configuring an administrative account in Active
 <h2>ActiveDirectory walk-through:</h2>
 
 <p align="center">
-In Users and Computers of AD create a new PDU named Administratives: <br/>
+In Users and Computers of AD create a new Organizational unit named Administratives: <br/>
 <img src="https://i.imgur.com/uYLepef.png"/>
 <br />
 <br />
