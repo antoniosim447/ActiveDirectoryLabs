@@ -3,7 +3,7 @@
 
 
 <h2>Description</h2>
-Project consists of creating and managing Group Policy Objects (GPOs) within Active Directory to centrally control user and computer settings. I configured policies such as password requirements, account lockout settings, and security restrictions, then applied and tested the GPOs on domain-joined computers to verify they were working correctly.
+Project consists of creating and managing Group Policy Objects (GPOs) within Active Directory to centrally control user and computer settings. I configured policies such as password requirements, account lockout settings, and security restrictions, then applied and tested the GPOs on domain-joined computers to verify they were working correctly. In this project I decided to disable all password policies to increase the speed at which I can create new accounts.
 <br />
 
 
@@ -19,34 +19,34 @@ Project consists of creating and managing Group Policy Objects (GPOs) within Act
 <h2>ActiveDirectory walk-through:</h2>
 
 <p align="center">
-In server dashboard click manage then Add Roles and Features: <br/>
-<img src="https://i.imgur.com/NVMnhRc.png"/>
+In server dashboard click tools>Group Policy Management->Domain->Group policy object->Right-click on Default domain>Edit: <br/>
+<img src="https://i.imgur.com/JsmhJH1.png"/>
 <br />
 <br />
-Click next->Role-based installation->next->select your server :  <br/>
-<img src="https://i.imgur.com/7dj58rQ.png"/>
+Select Computer Configurations>Policies->Window Settings->Security settings->and select Account policies:  <br/>
+<img src="https://i.imgur.com/rtUmWPj.png"/>
 <br />
 <br />
-Next->Select Active Directory Domain Services: <br/>
-<img src="https://i.imgur.com/C6nyeEz.png"/>
+Next->Input the settings you want: <br/>
+<img src="https://i.imgur.com/i3Gnrp3.png"/>
 <br />
 <br />
-Click next until you reach confirmation screen and choose to install:  <br/>
-<img src="https://i.imgur.com/9g0GEz7.png"/>
+Now we are going to create a Group and add users to it, to add users click on the group->Member->add:  <br/>
+<img src="https://i.imgur.com/nzEdLqH.png"/>
 <br />
 <br />
-After installing click on flag and select the option to promote server to a Domain Controller:  <br/>
-<img src="https://i.imgur.com/zB7gzLC.png"/>
+Go back to file explorer and create a file named Tech_users, in the security settings->advanced->disable inheritance->remove all groups excluding admins-> add Tech_users->then share the folder to create a route-> :  <br/>
+<img src="https://i.imgur.com/3P2SByg.png"/>
 <br />
 <br />
-Add a new forest and name your domain:  <br/>
-<img src="https://i.imgur.com/LG7g2aR.png"/>
+Now enter GPO and under your domain find the folder with your group and right click to add a new GPO and name it Tech_drive->right click->edit->user config->prefrences->right click drive maps->new->mapped drive->under the action tab change it to create->input the folder route into location->common tab->check Item level targeting->tageting->New Item 'security group'->add Tech_users to group->apply :  <br/>
+<img src="https://i.imgur.com/Kylrjml.png"/>
 <br />
 <br />
-Follow steps untill you arrive at installation screen and select install:  <br/>
-<img src="https://i.imgur.com/yaB9MF5.png"/>
+Congratulations you have now made a shared drive and folder for the group Tech_users:  <br/>
+<img src="https://i.imgur.com/9Zu6Mis.png"/>
 </p>
-
+Add a new forest and name your domain:  <br/>
 <!--
  ```diff
 - text in red
