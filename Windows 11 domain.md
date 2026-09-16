@@ -3,7 +3,7 @@
 
 
 <h2>Description</h2>
-Project consists of creating and configuring an administrative account in Active Directory with the appropriate permissions for managing users, computers, and domain resources.
+This project consists of configuring a Windows workstation to connect to an Active Directory environment and join it to a newly established domain. I configured the network settings, verified DNS connectivity to the Domain Controller, and added the workstation to the domain using authorized administrative credentials. The successful domain join was then verified to ensure the workstation could communicate with and authenticate through the Active Directory environment.
 <br />
 
 
@@ -14,7 +14,7 @@ Project consists of creating and configuring an administrative account in Active
 
 <h2>Environments Used </h2>
 
-- <b>Windows 10</b> 
+- <b>Windows 11</b> 
 - <b>Windows server</b> 
 <h2>ActiveDirectory walk-through:</h2>
 
