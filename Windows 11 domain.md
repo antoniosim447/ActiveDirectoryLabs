@@ -1,5 +1,5 @@
 # ActiveDirectoryLabs
-<h1>Creating and configuring Admistrative accounts</h1>
+<h1>Adding a Windows 11 Pc to my domain</h1>
 
 
 <h2>Description</h2>
