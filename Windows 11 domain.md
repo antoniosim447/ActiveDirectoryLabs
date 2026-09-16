@@ -19,17 +19,21 @@ This project consists of configuring a Windows workstation to connect to an Acti
 <h2>ActiveDirectory walk-through:</h2>
 
 <p align="center">
-In Users and Computers of AD create a new Organizational unit named Administratives: <br/>
-<img src="https://i.imgur.com/uYLepef.png"/>
+Configure the computer with an appropriate static IP address, subnet mask, and default gateway. The computer should use the Domain Controller's IP address as its preferred DNS server so it can locate the domain.: <br/>
+<img src="https://i.imgur.com/41MCvVw.png"/>
 <br />
 <br />
-Create a new user in said PDU, then right-click and select "add to a group":  <br/>
-<img src="https://i.imgur.com/nbaKIST.png"/>
+Verify that the computer received the expected IP address, gateway, and DNS configuration. This confirms that the computer is properly connected to the network before attempting to join the domain.":  <br/>
+<img src="https://i.imgur.com/969YlPy.png"/>
 <br />
 <br />
-in the empty space type in "Domain Admins" and click ok: <br/>
-<img src="https://i.imgur.com/JuN3kYW.png"/>
+Open System Properties and select Change under the computer name and domain settings." and click ok: <br/>
+<img src="https://i.imgur.com/mbYW7ET.png"/>
 <br />
 <br />
-to check if User was successfuly added select properties->member of:  <br/>
-<img src="https://i.imgur.com/gxe0cQA.png"/>
+Select Domain and enter the name of the Active Directory domain, such as Antonioslab.com. Click OK to join the domain. Enter Admin credentials when asked then click ok:  <br/>
+<img src="https://i.imgur.com/5DvKbLF.png"/>
+<br />
+<br />
+The “Welcome to the [domain] domain” message confirms that the computer successfully joined the Active Directory domain. The computer ask you to restart then join as a domain user.:  <br/>
+<img src="https://i.imgur.com/vW3yBly.jpeg"/>
